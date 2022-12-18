@@ -3,7 +3,7 @@ package model;
 public class NoteMapper {
    
         public String map(Note note) {
-            return String.format("%s,%s,%s,%s", note.getId(), note.getDate(), note.getTitle(), note.getBodyNote());
+            return String.format("# %s,DATE: %s,TODO: %s,\n %s\n", note.getId(), note.getDate(), note.getTitle(), note.getBodyNote());
         }
     
         public Note map(String line) {

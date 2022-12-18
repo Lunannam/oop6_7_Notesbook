@@ -7,7 +7,6 @@ package Views;
         CREATE,
         UPDATE,
         LIST,
-        DELETE,
         EXIT
     }
 

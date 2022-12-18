@@ -52,7 +52,7 @@ public class FileOperationManager implements FileOperation {
                 // запись всей строки
                 writer.write(line);
                 // запись по символам
-                writer.append('\n');
+                writer.append(' ');
             }
             writer.flush();
         } catch (IOException ex) {

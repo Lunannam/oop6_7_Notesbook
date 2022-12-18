@@ -20,12 +20,12 @@ public class ViewUser {
         Commands com = Commands.NONE;
 
         while (true) {
-            String command = prompt("Введите команду: ");
+            String command = prompt("ENETER COMMAND: ");
             try{
             com = Commands.valueOf(command);
             }
             catch (IllegalArgumentException e) {
-                System.out.println("Неопознанная команда");
+                System.out.println("UNKNOWM COMMAND");
             }
             if (com == Commands.EXIT) 
             return;
@@ -36,7 +36,7 @@ public class ViewUser {
                     noteController.saveNote(note);
                     break;
                 case READ:
-                    String id = prompt("Идентификатор пользователя: ");
+                    String id = prompt("id : ");
                    
                         Note readNote = noteController.readNote(id);
                         System.out.println(readNote);
